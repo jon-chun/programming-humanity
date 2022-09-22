@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://jon-chun.github.io/programming-humanity/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jon-chun.github.io/programming-humanity/about/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jon-chun.github.io/programming-humanity/project/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jon-chun.github.io/programming-humanity/readings/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://jon-chun.github.io/programming-humanity/syllabus/</loc>
+         <lastmod>2022-09-22</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
