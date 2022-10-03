@@ -1,0 +1,483 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jon-chun.github.io/programming-humanity/wk4_networks/networks/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.1">
+    
+    
+      
+        <title>Networks - Programming Humanity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nodes-and-networks-of-computation" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Humanity" class="md-header__button md-logo" aria-label="Programming Humanity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Humanity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Networks
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Humanity" class="md-nav__button md-logo" aria-label="Programming Humanity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Programming Humanity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readings/" class="md-nav__link">
+        Readings
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../syllabus/" class="md-nav__link">
+        Syllabus
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/" class="md-nav__link">
+        Project
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#monday-operating-systems-and-networks" class="md-nav__link">
+    Monday: Operating Systems and Networks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wednesday-security" class="md-nav__link">
+    Wednesday: Security
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#friday-cyberwarfare-and-wikileaks" class="md-nav__link">
+    Friday: CyberWarfare and Wikileaks
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-class-demos" class="md-nav__link">
+    In Class Demos:
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<p><img alt="Network Cables" src="../images/john-barkiple-l090uFWoPaI-unsplash_networks_cables.jpg" /></p>
+<h1 id="nodes-and-networks-of-computation">Nodes and Networks of Computation</h1>
+<div class="video-wrapper">
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/vZNyjuNLhIk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<p><strong>Nodes and Networks of Computation</strong></p>
+<p>In previous weeks we studied the three main components of a traditional stand-alone computer system: Input (Data) -&gt; Processing (Algorithms) -&gt; Output (Visualizations). This week, we focus on how this single physical computer (a complete computational unit) can operate as just one “node” in a much larger and more complex network of computers.</p>
+<p>Networking enables a single computational node to overcome limits of compute power, memory, and bandwidth by becoming part of a much larger network. When data and computation can be distributed over many individual computing units each node can perform certain sub/tasks as part of a much larger computational process. Scaling-up from individual computers to networks allows for changes not just in quantity of computing but in quality. Network effects describe the emergent property of networks in which the whole network has entirely new and sometimes unexpected properties beyond just the simple sum of its parts. In later weeks we’ll discuss social networks, which also have their own properties and which often take on emergent unique properties that are also more than the sum of their individual actors. There is also a vast and growing “Internet of Things (IoT)” connecting sensors in “things” all over the world from fitbits to automobile GPS sensors to nuclear powerplants. Blockchain/Bitcoin also uses the power of networks to build new models of decentralized trust for the exchange of goods, services and digital currency.</p>
+<p>Networks bring a double-edged sword of opportunity and risk. On the one hand, networks offer a robustness that a single computer can’t. If a computer or node is down, information or processes can be rerouted easily to avoid the compromised node. Similarly, networks can be architected and segmented to optimize processing power and create subdomains of protection and trust. However, the vast interconnected network also provides opportunities for hacking, spreading propaganda, stifling dissent or facilitating illegal transactions via the Darknet. </p>
+<p>We begin the week with a quick introduction to operating systems by working at the command line. We will also learn about how networks are created to try to prevent threats and unauthorized intrusions, as well as the ways viruses and malware can circumvent these. Our ethical concern revolves around both the concentrated power and potential abuse of network effects by both state and non-state actors. First, we’ll consider cyber warfare and discuss whether current paradigms for “just warfare” need to be updated to accommodate our new reality. We’ll then explore Wikileaks to acquire a more informed and critical opinion on possible distinctions between Black-Hat (i.e. criminal) and White-Hat (i.e. ethically-motivated) hacking.</p>
+<p>In DataCamp we will continue with our Introduction to Python coding lessons as well as a brief introduction to the shell.</p>
+<h2 id="monday-operating-systems-and-networks"><strong>Monday: Operating Systems and Networks</strong></h2>
+<ul>
+<li><a href="">How Computers Work: Hardware and Software</a> (5:22) Code.org,  Jan 2018</li>
+<li><a href="">The Internet:  IP Addresses &amp; DNS</a> (6:44) Code.org, Sep 2015</li>
+<li><a href="">The Internet: Packets, Routing and Reliability Code.org</a> (6:25) Sep 2015</li>
+<li><a href="">Emergence – How Stupid Things Become Smart Together</a> (7:30) Kurzgesagt, Nov 2017</li>
+<li><a href="">The Wired Guide to the Internet of Things, Arielle Pardes</a> Wired, Nov 2020</li>
+<li><a href="">The Internet of Things, Information Is Beautiful</a> (Interactive Visualization, click through on diagrams)</li>
+<li>DataCamp, <a href="https://app.datacamp.com/learn/courses/introduction-to-shell">Introduction to Shell</a><ul>
+<li>Chapter 1: Manipulating Files and Directories</li>
+<li>Watch out for required spaces and don’t worry if you need to ask for hints or even show answers. This exercise just to give you a sense of what it’s like to work at the command line. We will practice in class.</li>
+</ul>
+</li>
+<li>DataCamp, <a href="https://app.datacamp.com/learn/courses/intro-to-python-for-data-science">Intro to Python</a>
+    Chapter : Python Basics – spread out over today and Wednesday (accompanying homework videos/readings are shorter both days). Today complete through “subsetting lists of lists.”</li>
+<li>Test Your Understanding<ul>
+<li>What is a list? How do you select from and slice lists and lists of lists (it can be tricky!)</li>
+<li>Key terms: CPU, OS, IP address, DNS, emergence</li>
+</ul>
+</li>
+</ul>
+<h2 id="wednesday-security"><strong>Wednesday: Security</strong></h2>
+<ul>
+<li><a href="">Network Theory Overview</a> (5:50) These first two videos provide a lightening introduction.</li>
+<li><a href="">Graph Theory Overview</a> (4:21) We will take a more in-depth look in our week on social networks.</li>
+<li><a href="">Asymmetric Encryption</a> (4:40) Simply Explained, Oct 2017</li>
+<li><a href="">What is Blockchain?</a> Centre of Int’l Governance Innovation, (6:26) Jan 2018</li>
+<li><a href="">The Internet: Cybersecurity and Crime</a> Code.org (5:01) Aug 2015</li>
+<li><a href="">Malware: The Difference Between Viruses, Worms and Trojans</a> (2:45) Kapersky Labs</li>
+<li><a href="">StuxNet: Anatomy of a Computer Virus</a> (3:21) Patrick Clair</li>
+<li><a href="">World’s Biggest Security Breaches</a> Information is Beautiful (Which worries you most and why?)</li>
+<li>
+<p><a href="">10 Dark web links to explore</a> and <a href="">The Hidden Wiki</a> (if you wish to explore, you can download Tor here, read full instructions and take precautions Download Tor) </p>
+</li>
+<li>
+<p>DataCamp, <a href="https://app.datacamp.com/learn/courses/intro-to-python-for-data-science">Intro to Python</a></p>
+<ul>
+<li>Chapter 2: Python Lists</li>
+<li>Chapter 3: Functions and Packages</li>
+</ul>
+</li>
+<li>Test Your Understanding<ul>
+<li>More with lists: How can you add and delete elements to your list? </li>
+<li>Practice with functions versus methods (different depending on the type of object); if it’s been awhile since you’ve worked with some of the math equations, don’t worry–they give you everything you need to know (go back to unit 1 if you need to refresh how to do multiplication etc).</li>
+<li>Random versus Designed networks</li>
+<li>Graph Theory is a way to model networks: what are the basic elements?</li>
+<li>How does asymmetric encryption relate to blockchain?</li>
+<li>What are ways that seemingly secure systems can be breached?</li>
+<li>What are the kinds of sites you can find on the Dark Web?</li>
+</ul>
+</li>
+</ul>
+<h2 id="friday-cyberwarfare-and-wikileaks"><strong>Friday: CyberWarfare and Wikileaks</strong></h2>
+<p>Note on grade spreadsheet: We have taken down the spreadsheets and will let you know when Tam has Moodle up and running. At that point we will do an inventory to make sure we have all excused absences, bonus points, etc, accounted for. Do make sure you are up to date on all the Datacamps–an easy 100%! We also plan to offer some extra credit options later in the semester for those interested.</p>
+<ul>
+<li><a href="">What is Net Neutrality?</a> ACLU Open all smaller windows to familiarize yourself with it. ACLU has a strong point of view, so take this POV under consideration as you read. </li>
+<li><a href="">International Cyberlaw in Practice: Interactive Toolkit</a> Read: <a href="">Scenario 1: Election Interference</a></li>
+<li><a href="">A Brief Primer on International Law and Cyberspace</a>, Duncan Hollis, Carnegie Endowment for International Peace, Jun 2021</li>
+<li><a href="">Russian Cyber Operations and Ukraine: The Legal Framework</a>, Michael Schmitt, Lieber Institute, West Point, Jan 2022</li>
+<li><a href="">Legal Experts: StuxNet Attack on Iran was an Illegal 'Act of Force'</a>, Kim Zetter, Wired, Mar 2013</li>
+<li><a href="">Wikileaks CIA Files: The 6 Biggest Spying Secrets Revealed by the Release of Vault 7</a>, Andrew Griffin, UK Independent.co.uk, Mar 2017</li>
+<li>
+<p><a href="">A Murderous System is being Created Before Our Very Eyes</a>, UN Special Rapporteur on Torture, Nils Melzer Republik.com, Dec 2019</p>
+</li>
+<li>
+<p>DataCamp, <a href="https://app.datacamp.com/learn/courses/intro-to-python-for-data-science">Introduction to Python</a></p>
+<ul>
+<li>Chapter 4: NumPy</li>
+</ul>
+</li>
+<li>
+<p>Test Your Understanding</p>
+<ul>
+<li>Why might we want to convert a Python list into a Numpy array?</li>
+<li>Which example of non-net neutrality by internet providers concerns you most, and why? </li>
+<li>Was Stuxnet illegal? Why or why not?</li>
+<li>What are the revelations from Wikileaks? </li>
+<li>Are whistleblowers and hacktivism justified? Do we have a right to know what Wikileaks revealed?</li>
+</ul>
+</li>
+</ul>
+<h2 id="in-class-demos"><strong>In Class Demos:</strong></h2>
+<ul>
+<li>
+<p><strong>UNIX Exercises:</strong></p>
+<ul>
+<li><a href="">Unix Command Tutorial</a></li>
+<li><a href="">Mac Network Commands or UNIX Network Commands</a></li>
+<li><a href="">Mac built-in ActivityMonitor</a>  or <a href="">Windows Admin PowerShell</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Network:</strong></p>
+<ul>
+<li><a href="">256 SHA Hash at the Command Line</a> (sha256sum)</li>
+<li><a href="">PKI Asymmetric Key Generation</a> (ssh-keygen)</li>
+<li><a href="">CoinMarketCap.com</a> and <a href="">Crypto.com</a> and <a href="">CoinDesk.com</a></li>
+<li><a href="">Etherscan.io Blockchain Viewer</a></li>
+<li><a href="">Blockchain Demo</a> and <a href="">MetaMask.io</a></li>
+</ul>
+</li>
+</ul>
+
+
+
+
+              
+            </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      
+        <script src="../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

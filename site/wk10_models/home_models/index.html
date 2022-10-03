@@ -1,0 +1,384 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://jon-chun.github.io/programming-humanity/wk10_models/home_models/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.4.1">
+    
+    
+      
+        <title>Models - Programming Humanity</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.69437709.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#models" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Programming Humanity" class="md-header__button md-logo" aria-label="Programming Humanity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Programming Humanity
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Models
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Programming Humanity" class="md-nav__button md-logo" aria-label="Programming Humanity" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Programming Humanity
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../readings/" class="md-nav__link">
+        Readings
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../syllabus/" class="md-nav__link">
+        Syllabus
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/" class="md-nav__link">
+        Project
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="models">Models</h1>
+<p><img alt="Models" src="https://programminghumanity.files.wordpress.com/2020/04/ciroczoolander-20160118110413263.jpeg" /></p>
+<p><a href="https://youtu.be/KWPhV6PUr9o">MONEYBALL - breaking biases - FREQUENCY BASED PROBABILITY / STATISTICS - MATHEMATICS in the MOVIES - YouTube</a></p>
+<p>Perhaps the most important thing to remember is the saying by George Box: "All models are wrong. Some models are useful." All models come with some degree of uncertainty, and the more complex the model, the greater the risks for harm as models become opaque black boxes.  The most powerful State of the Art (SOTA) models have been exponentially growing in compute, data and energy requirements and increasingly accessible to only the largest corporate and government research groups.</p>
+<p>In the case of the Bestseller Code that you read for last week, there are approximately 1000 parameters in the model. Deep neural network Attention Models you saw in the form of GPT-3 and DALL-E are approaching a billion parameters. This week we start with an introduction to "the model thinker" with an overview of the theory of models. Next we'll look the application of models by exploring some of the most common types, namely linear models and classificatory models. We'll also consider the importance of models for understanding one of our most pressing global issues: climate change.</p>
+<p>We'll also look at why COVID-19 has been so hard to model.  For Friday, we'll consider three questions for our discussion. The first concerns responses to COVID. Given the difficulty, officials have had to make public policy decisions in the face of very real uncertainty. How much of this uncertainty should be conveyed to the public? Is the noble lie necessary in order to ensure compliance with any and all recommendations? How do we treat those who publicly disagree? Next we'll consider whether math just allows us to approximate reality through models, or whether math actually reveals the underlying nature of reality. Is math our greatest <strong>invention</strong>--allowing us to predict outcomes and act in the world with agency? Or is it a <strong>discovery</strong> of the fundamental nature of reality? We'll also have a small glimpse into the issues of fairness and accuracy that can arise from complex models that use Machine Learning. As you know, we offer an entire course on Machine Learning and AI. The course is  designed and sequenced to follow Programming Humanity, so please do consider continuing on the journey. We have also made it easier to enter the IPHS concentration via multiple paths. Scroll to the bottom for details about how to become a concentrator. </p>
+<p>In DataCamp this week, we'll finish our work with NLP by practicing advanced regular expressions (difficult--just do your best) and trying our hand at creating an ad keyword search. We'll then move on to our penultimate programming exercises: a slightly deeper dive into statistics with Python, followed by a brief foray into one of the most common data visualization tools: Tableau. </p>
+<p><strong><em>Optional</em></strong>: Sign-up for Extra Credit (<a href="https://docs.google.com/document/d/1wpLJNYG4LNA0HhNglyfJgRRwInb_-92_/edit?usp=sharing&amp;ouid=112623698525906186738&amp;rtpof=true&amp;sd=true">10-11am class</a> and <a href="https://docs.google.com/document/d/1NaXUGt2GzbQqZm-DkRFEIJqGU6SASbtz/edit?usp=sharing&amp;ouid=112623698525906186738&amp;rtpof=true&amp;sd=true">11-noon class</a> <em>done from memory email me if you are in the wrong section</em>) Class Presentation on Previous Years' Final Projects. Many of the projects we read about last week require a bit more of a foundation to complete (provided by our other two classes). We turn now to examples of very interesting projects that are already within easy reach after this introductory course. If we run out of slots and you're interested in the extra credit, we will open up slots for the week on AI (from the 300 class). </p>
+<p><strong>Monday</strong>: Introduction to Models, Debates about COVID models</p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1ECRaaNoIe8O1c-f6smmM033yHzV6kZ_h/view?usp=sharing">The Model Thinker</a> (ONLY Prologue and Chp 1-3), Scott Page, Basic Books, 2018 [Download first to rotate] </li>
+<li><a href="https://www.youtube.com/watch?v=nKW8Ndu7Mjw&amp;t=171s">7 Steps to Machine Learning</a> (10:35) Google Cloud Tech, Aug 2017</li>
+<li><a href="https://www.youtube.com/watch?v=PaFPbb66DxQ">Fitting a Line to Data</a> (aka Least Squares/Linear Regression) (9:20) StatQuest, May 2017</li>
+<li><a href="https://www.youtube.com/watch?v=tNa99PG8hR8&amp;list=PLT27DpvUCskZn_DFPmQjgFes3ietL51is">Visualizing a Decision</a> Tree (6:41) , Google Developers, Apr 2016</li>
+<li>DataCamp Unit 4, Advanced Regular Expressions (We are continuing to encounter grading issues with these--sometimes correct answers are scored as wrong (0). If you encounter this issue, send a screenshot after clicking on the "course outline" at the top--this allows us to see points and allot credit). </li>
+<li>Test Your Understanding</li>
+<li>What are the three types of models: embodiment, analogy, and alternative reality</li>
+<li>Why do we need many models? What is a categorization model?</li>
+<li>What are the Condorcet jury theorem and the Diversity prediction theorem?</li>
+<li>What is the One to Many phenomenon? </li>
+<li>Two types of models: linear and classification</li>
+</ul>
+<p><strong>Wednesday: More on Model Types and Climate, COVID</strong></p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1g21CjS4XNyuuDJvXK7wEyoi1LrGC4aFY/view?usp=sharing">The Model Thinker</a> (Ch 5-7, we will read 4 next week), Scott Page, Basic Books, 2018</li>
+<li><a href="https://www.youtube.com/watch?v=XGi2a0tNjOo">Introduction to Climate Modeling</a> (14:50) Climate Literacy, Feb 2014</li>
+<li><a href="https://fivethirtyeight.com/features/why-its-so-freaking-hard-to-make-a-good-covid-19-model/">Why It's So Freaking Hard to Make a Good COVID-19 Model</a>, Koerth, et. al, FiveThirtyEight.com, 31 Mar 2020</li>
+<li>DataCamp Project: Generating Ad Keywords. Here you'll get to see how one can create a good search/ad keyword engine using the skills you've learned. A note on grades for mini-projects: these are pretty easy with hints, so we will be combining the 4 that you do into two completion scores for mini-projects. You will have one upcoming mini-project that is more freeform (usingTableau). More on that next week.</li>
+<li>Test Your Understanding</li>
+<li>Have a basic idea of the different kinds of distributions: the bell curve, lognormal, and power law.</li>
+<li>More model concepts:  Zipf's law, Preferential Attachment Model, Long Tails</li>
+<li>Linear Regression, Linear Classification, Non-Linear Classification, Decision Tree Classification</li>
+</ul>
+<p><strong>Friday: Today's Models Using Machine Learning</strong></p>
+<p><strong>UPDATE: We assumed that the AI for the Humanities course would not fill because we are now requiring some coding experience (equivalent to the Intro and Intermediate Python you completed). However I have had a lot of emails, and there is a possibility that the class could be filled before sophomores have time to enroll. If you know for sure you would like to take it next semester, I would be happy to reserve a spot for you--email me (Elkins) and I will reduce open spots with the registrar's office. Please do not reserve a spot as a backup for another course, since spots can be hard to fill after the initial enrollment process.</strong> </p>
+<ul>
+<li><a href="https://drive.google.com/file/d/1OFc--z4CSrhqPNQh-cdQFvugVTecM6gB/view?usp=sharing">The Model Thinker</a>, Ch. 29 Opioids, COVID-19 and Inequality</li>
+<li><a href="https://ibmathsresources.com/mathsinventedordiscoveredtok/">Mathematics and Reality</a>, IB Maths Tok Essay, British International School, Phuke</li>
+<li><a href="https://news.stanford.edu/2020/10/30/academic-freedom-questions-arise-campus-covid-19-strategy-conflicts/">Academic Freedom Questions Arise on Campus Over Covid-19 Strategy Conflicts</a>, Kate Chesley, Stanford News, 30 Oct 2020</li>
+<li><a href="https://www.newstatesman.com/science-tech/coronavirus/2020/10/why-scientists-fear-toxic-covid-19-debate">Why Scientists Fear the 'toxic' Covid-19 Debate</a>, New Scientists, Laurie Clark, 30 Oct 2020</li>
+<li>DataCamp: Statistical Thinking in Python, Unit 1. We return now to several weeks on data visualization. There will be some review of earlier concepts, with the addition of some new ideas. The next few weeks will be the final preparation for those wishing to do a data analytics final project. After break, we will work with social media/twitter for those interested in doing a cultural analytics final project. </li>
+<li>Test Your Understanding</li>
+<li>Today's readings seed our debates about our models. </li>
+</ul>
+<p><strong>In Class Demo</strong></p>
+<ul>
+<li><a href="https://setosa.io/ev/ordinary-least-squares-regression/">Ordinary Least Squares</a> Interactive Demo, setosa.io</li>
+<li>Jupyter notebook: <a href="https://colab.research.google.com/drive/1aXcxVjhiHv10E-r52tMSopDyosuuD-6C?usp=sharing">Sentiment Arc of Novels</a></li>
+<li>Jupyter notebook: <a href="https://colab.research.google.com/drive/1-7QP47wIlZCaUJNK6lpiTuldAnw-iLh_?usp=sharing">Relationships: Correlation and Linear Regression</a> (Allen Downey)</li>
+<li>Jupyter notebook: <a href="https://colab.research.google.com/drive/15Xi2pdFNJvZL9DQyZX9d-GBDfAIQUhBr?usp=sharing">Single and Multiple Linear Regression</a> (Allen Downey)</li>
+</ul>
+
+
+
+
+              
+            </article>
+            
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.ecf98df9.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.9c69f0bc.min.js"></script>
+      
+        <script src="../../javascript/extra.js"></script>
+      
+    
+  </body>
+</html>

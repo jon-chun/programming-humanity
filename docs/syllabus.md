@@ -1,114 +1,206 @@
 # Syllabus
----
 
-![Map Image](images/img_iphs290_syllabus_esther-jiao-ADv0GiMBlmI-unsplash.jpg)
+## IPHS 200 Programming Humanity
 
+### Office Hours:
 
-## Course Description
+#### Professor Chun
 
-**IPHS 290 Cultural Analytics**  
-**Integrated Program for Humane Studies**  
+MWF 12:10-1 and by appointment
 
-## Office Hours
+#### Professor Elkins
 
-**Professor Elkins**  
-TueThur 1-2pm, Fri 1:10-2:10  
-or appointment at elkinsk@kenyon.edu
+MWF 12:10-1, Tuesday 12:00-1:10 and by appointment at [elkinsk@kenyon.edu](mailto:elkinsk@kenyon.edu)
 
-**Professor Chun**  
-MWF 1:10-2:10  
-or appointment at chunj@kenyon.edu
+***“We become what we behold. We shape our tools and then our tools shape us” – Fr. John Culkin/Marshall McLuhan***
 
+### Course Description
 
-## Calendar
+How do we think of humanity in the digital age? Can we program humanity into our technology by generating music, analyzing vast quantities of literary text, and producing great visual works of art? Or will humans be programmed through genetic engineering, predictive policing, manipulations of social media, and domestic surveillance? Are we firmly entrenched in a Posthumanist world, and is Transhumanism a future to which we should aspire? By the end of this course you will:
 
-| **Week**   |  Date   |    Topic    | Motivating Example | Technical Background | Coding Assignment |
-|:------:|:-------:|:-----------:|:----------------------:|:--------------------:|:---------------------:|
-| 1      | 29 Aug (Mon)  | Mapping     | Redlining, Detention Centers, Dispossession & the Homestead Act   |       GeoPy and GeoPandas     | DataCamp [Working w/Geospatial Data in Python](https://app.datacamp.com/learn/courses/working-with-geospatial-data-in-python)      |
-| 2  | 5 Sep (Mon) | MINI-PROJECT #1 | Geospatial Mapping | GeoPy and GeoPandas | Kaggle [GeoSpatial Analysis](https://www.kaggle.com/learn/geospatial-analysis) |
-| 3  | 12 Sep (Mon) | Web Scraping | Scrape Example | HTML, XPaths, CSS, Spiders | DataCamp [Web Scraping in Python](https://app.datacamp.com/learn/courses/web-scraping-with-python) |
-| 4  | 12 Sep (Mon) | APIs | API and Bots | Twitter API, REST, JSON | DataCamp [Analyzing Social Media in Python](https://app.datacamp.com/learn/courses/analyzing-social-media-data-in-python) |
-| 5  | 26 Sep (Mon) | Introduction to NLP | RegEx, TF-IDF, NER, Polyglot | NLTK, SpaCy, Gensim | DataCamp [Introduction to NLP in Python](https://app.datacamp.com/learn/courses/introduction-to-natural-language-processing-in-python) |
-| 6  | 7 Nov (Mon) | Social Networks | GoT and Twitter Examples | GraphX and Twitter | DataCamp [Introduction to Network Analysis in Python](https://app.datacamp.com/learn/courses/introduction-to-network-analysis-in-python) |
-| 7  | x Nov (Mon) | MINI-PROJECT #2 | Social Networks | NetworkX | TBA |
-| 8  |  3 Oct (Mon) | Sentiment Analysis | Parsing and Linguistic Example | NLTK & SpaCy | DataCamp [Sentiment Analysis in Python](https://app.datacamp.com/learn/courses/sentiment-analysis-in-python) |
-| 9  | 10 Oct (Mon) | Advanced NLP | Vectorization, Pipelines, DNN | SpaCy | DataCamp [Advanced NLP with SpaCy](https://app.datacamp.com/learn/courses/advanced-nlp-with-spacy) |
-| 10 | 17 Oct (Mon) | Topic Modeling | Topic Modeling Example | Gensim | [Gensim 4 Core Tutorials](https://radimrehurek.com/gensim/auto_examples/index.html) |
-| 11 | 31 Oct (Mon) | Diachronic Sentiment Analysis | SentimentArcs Cambridge & Time Series Processing | SentimentArcs Paper/Chapter | DataCamp [Manipulating Time Series Data in Python](https://app.datacamp.com/learn/courses/manipulating-time-series-data-in-python) |
-| 12 | 7 Nov (Mon) | MINI-PROJECT #3 | Diachronic Sentiment Analysis | SentimentArcs | TBA |
-| 13 | 14 Nov (Mon) | Web Servers | Museum Curation | GitHub.io and mkdocs | [Github Pages](https://docs.github.com/en/pages) [Mkdocs](https://squidfunk.github.io/mkdocs-material/getting-started/) |
-| 14 | 28 Nov (Mon) | Final Project | Work in-class on project | Digital Kenyon | Lab all week |
+- Have basic skills in Python, data visualization, data wrangling, and natural language processing.
+- Gain a foundational understanding of key aspects of our Age of Information from Dataism and Information Theory to Machine Learning and Artificial Intelligence.
+- Relate this emerging picture to conversations about Humanism, Posthumanism, and Transhumanism.
+- Understand how new computational tools both challenge and deepen traditional approaches to the Social Sciences, Humanities, and Fine Arts.
+- Understand emerging ethical debates surrounding key technologies poised to transform humanity.
+- Have a portfolio of project-based work demonstrating your computational skills with a final project of your choice.
 
+### Assignments
 
-## Course Description
+20% Attendance and Discussion
 
-Cultural analytics is the study of society and social phenomena by analyzing data and the way it flows.  This involves gathering, transforming, visualizing and narrativizing data in various forms including numeric, textual, geospatial, and as time series.
+25% Quizzes
 
-This course presumes some coding experience or the introductory course to Digital Humanities, [IPHS200 Programming Humanity](https://programminghumanity.wordpress.com/). We start with geospatial data and mapping. Next, we’ll build on our skills using web scrapers and API’s to create original datasets from social media sites like Twitter. Then we’ll learn various natural language processing techniques underlying sentiment analysis and topic clustering to explore text for insights. Finally, we'll learn how to graph and explore the relations between data in the form of social networks. 
+15% Mini-projects
 
-This is a methods class focused on learning both the conceptual and practical applications of maps, texts, and networks. A carefully curated sequence of key abstract concepts explored through the most popular and useful libraries will mark our progression through the semester. We'll also read some of the best examples of work in the field and use these to inspire our own experiments. 
+25% Python programming exercises (10)
 
-We’ll do some hands-on projects on DataCamp like analyzing the social network of Game of Thrones and exploring the shifting topics/sentiment of Trump/Trudeau on social media. But we'll also have three project weeks during which we'll break into groups and move through the entire process, from brainstorming ideas to visualizing and analyzing the results. In the final segment of the course, we'll learn how to showcase projects on individual Github sites and work on final projects centered on individual interests.
+15% Final Project (1)
 
-## By the end of this course you will:
+- Moodle gradebook will be updated regularly.
 
-* Deepen your proficiency in Python, data visualization, and data wrangling
-* Learn how to automate dataset creation via web scraping and programmic APIs
-* Learn the fundamentals of geospatial analytics 
-* Learn core Natural Language Processing techniques including scraping, cleaning, representing, transforming and analyzing text
-* Learn the fundamentals time series analysis  
-* Learn basic graph theory, algorithms, metrics and visualizations
-* Present your code on Github and project on a personal website
-* Learn how to identify interesting multi-disciplinary research questions and judiciously use a wide range of computational technologies to analyze, critique and productively address such questions
+### Attendance
 
+In accordance with standard Kenyon policy, absences greater than 25% of the class will result in a failing grade.
 
+### Quizzes
 
-## Grading
+Short quizzes will test comprehension of key terms and information. Quizzes cannot be made up if you miss class, but the lowest grade will be dropped.
 
-* 25% DataCamp
+### Mini-Projects and Final Project
 
-* 15% Reading/Concept Quizzes
+You will receive a free Datacamp account with assignments due for each class session. Assignments are graded solely on completion, but you must complete them fully (i.e. no 0’s). 
 
-* 40% 3 Mini-projects
+Mini Projects will be assigned on DataCamp. They are more challenging and depending on the level of difficulty, we may use class time and group work to complete them.
 
-* 20% Final Project
-
-There is no final exam
-
-
-## Attendance
-
-In accordance with standard Kenyon policy, absences greater than 25% of the class will result in a failing grade. You are allowed three absences, no questions asked, before your attendance grade drops. 
-
-These absences count as combination sick/personal days, i.e. please do not take 3 personal days and then ask for additional sick days. In cases of extreme illness or other unforeseen events, please ensure the advising office is aware and that you’ve been granted an excused absence. We will be notified accordingly.
-
-
-## Quizzes
-
-Short quizzes will test comprehension of key terms and information. Quizzes cannot be made up if you miss class. 3 quizzes will be dropped to accomodate 3 absences. Then the 3 lowest grades will be dropped.  
-
-
-## Datacamp Assignments and Mini-Projects
-
-You will receive a free Datacamp account with assignments due for each class session. Assignments are graded solely on completion, but you must complete them fully (i.e. no 0’s). Please make sure the checkmarks are there on each section on the outline of the course.
-
-
-## Final Project
-
-For the final project, you may a) complete a data analysis or cultural analytics project working with numeric or linguistic data or b) create an in-depth analysis of a particular technology. b) should demonstrate understanding of both the technology and the ethical/social issues surrounding that technology. 
-
-
-## Final Thoughts on Grades
+### Final Thoughts on Grades
 
 This class is meant to be a fun and exploratory introduction. Students will bring different strengths and backgrounds to this interdisciplinary class, and the emphasis will be on developing these personal interests and competencies. If you do the work, you will do well.
 
+### Responsible Employee Information
 
-## Responsible Employee Information
+We will be studying and/or discussing a number of issues that may cause discomfort or distress. If you wish to speak with either of us about any readings, assignments or class discussions, please understand that we may be required to report information about sexual misconduct to the Title IX Coordinator.  For confidential support, you may contact the following resources: The Health and Counseling Center, Sexual Misconduct Advisors (SMAs) the College chaplains, and staff at New Directions Domestic Abuse Shelter & Rape Crisis Center.
 
-We will be studying and/or discussing a number of issues that may cause discomfort or distress. If you wish to speak with either of us about any readings, assignments or class discussions, please understand that we may be required to report information about sexual misconduct to the Title IX Coordinator.  For confidential support, you may contact the following resources: The Health and Counseling Center, Sexual Misconduct Advisors (SMAs) the College chaplains, and staff at New Directions Domestic Abuse Shelter & Rape Crisis Center
+### Statement of Academic Integrity and Disability Accommodations
 
+At Kenyon we expect all students, at all times, to submit work that represents the highest standards of academic integrity. It is the responsibility of each student to learn and practice the proper ways of documenting and acknowledging those whose ideas and words they have drawn upon (see Academic Honesty and Questions of Plagiarism in the Course Catalog). Ignorance and carelessness are not excuses for academic dishonesty. If you are uncertain about the expectations for this class, please ask for clarification. Students with disabilities who will be taking this course and may need academic accommodations are encouraged to make an appointment to see me as soon as possible. Also, you are required to register for support services with the Office of Disability Services in the Olin Library, Center for Innovative Pedagogy. Please contact Erin Salva at 5453 or email salvae@kenyon.edu.
 
-## Statement of Academic Integrity and Disability Accommodations
+---
 
-At Kenyon we expect all students, at all times, to submit work that represents the highest standards of academic integrity. It is the responsibility of each student to learn and practice the proper ways of documenting and acknowledging those whose ideas and words they have drawn upon (see Academic Honesty and Questions of Plagiarism in the Course Catalog). Ignorance and carelessness are not excuses for academic dishonesty. If you are uncertain about the expectations for this class, please ask for clarification. Students with disabilities who will be taking this course and may need academic accommodations are encouraged to make an appointment to see me as soon as possible. Also, you are required to register for support services with the Office of Disability Services in the Olin Library, Center for Innovative Pedagogy.
+**First Day: Syllabus, Introduction**
 
+*****Some coding exercises roll over into following weeks. For the most exact information, please consult  Programminghumanity.wordpress.com and Datacamp**
+
+**Week One– Matter and Information: Are We Data?**
+
+Concepts: Data, Information Theory
+
+Code: Data Science for Everyone
+
+Ethics: Is Dataism The New Religion?
+
+**Week Two– The Brain and Computers: Cognition and Consciousness**
+
+Concepts: Algorithms, Cognitive Science and Neuroscience
+
+Code: Data Science in Python
+
+Ethics: What is Consciousness?
+
+**Week Three– Storytelling Visualized: Persuasion and Deception**
+
+Concepts:  Storytelling and Visualizations
+
+Code: Data Visualization for Everyone
+
+Ethics: The Good and the Bad: Data Journalism and Fake News
+
+**Mini Project #1 Due September 17: Introduction to Datacamp Projects**
+
+**Week Four– Interconnecting Humanity: Network Effects**
+
+Concepts: Networks, Hacking and Cyberwarfare
+
+Code: Introduction to Python
+
+Ethics: Just War Theory in the Age of Cyberwarfare
+
+**Week Five– The Language of Thought: Programming Aesthetics**
+
+Concepts: Evolution and Paradigms in Programming
+
+Code: Intermediate Python
+
+Ethics: Natural versus Artificial Languages
+
+**Week Six– Ro/Bots: Automating Humanity (No class Friday)**
+
+Concepts: Cybernetics and Control Theory
+
+Code: Hacker Statistics, Importing Data
+
+Ethics: UBI, Autonomous Killing Weapons, Augmenting Humans
+
+**Week Seven– Quantifying Uncertainty: Shaping Emotions**
+
+Concepts:  Probabilistic Programming and Causality
+
+Code: Data Types 
+
+Ethics:  Can Computers Know Us Better Than Ourselves?
+
+**Mini Project #2 Due October 23rd: Analyzing TV Data**
+
+**Week Eight– Data, the New Oil: The Surveillance State**
+
+Concepts: Databases, Big Data and The Surveillance State
+
+Code: Data Engineering for Everyone
+
+Ethics: The Ethics of Hacktivism
+
+**Week Nine– Models: Predicting Humanity**
+
+Concepts: Decision Tree Ensembles and Analytics Pipeline
+
+Code: Data Visualization with Matplotlib
+
+Ethics: Predictive Policing
+
+**Mini Project #3 Due November 6th: Generating Keywords for Google Ads**
+
+**Week Ten– Natural Language: Finding Humanity in Text**
+
+Concepts: Natural Language Processing
+
+Code: Regular Expressions in Python
+
+Ethics: Can/Should the Humanities be Quantified? 
+
+**Week Eleven– Simulations: Parallel Worlds**
+
+Concepts: Models and Game Theory
+
+Code:  Finish Matplotlib, Tableau (on Datacamp but cannot be “assigned”)
+
+Ethics: All Models are Wrong. Are They Useful?
+
+**Week Twelve– Evolving Life: Recoding Humanity**
+
+Concepts: Genetic Engineering and Brain Computer Interface
+
+Code: Statistical Thinking in Python
+
+Ethics: Transhumanism: Birth and Death Redefined
+
+**(Thanksgiving Break)**
+
+**Week Thirteen–Social Networks: Domesticating the Social Animal**
+
+Concepts:  Cognitive Biases and Cognitive Science
+
+Code: Intermediate Importing Data
+
+Ethics: Programming Humans
+
+**Mini Project #4 Due December 6th: Investigating Netflix Movies and Guest Stars in The Office**
+
+**Week Fourteen—AI for the Humanities: Our Last Creation?**
+
+Concepts:  Artificial Intelligence and Neuromorphic Engineering
+
+Code: Finish up DataCamps, Work on Project
+
+Ethics: Consequences of Superintelligence
+
+### ***Final Project Due Dates:***
+
+### ***Proposal Due December 1st***
+
+### ***Final Poster Due at the End of Scheduled Exam Time***
+
+For MWF 10:10 Thursday December 16 at 4:30
+
+For MWF 11:10 Friday December 17 at 4:30
+
+**We are not allowed to accept projects after December 17 at 4:30 without an approved incomplete from Dean Hawks.**
